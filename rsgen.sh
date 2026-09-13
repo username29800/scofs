@@ -69,6 +69,7 @@ echo "==" > hostkey.txt
 
 echo "[ def_conn.txt ]"
 echo C > def_conn.txt
+echo t > def_conn.txt
 
 echo "[ def_tnl.txt ]"
 echo C > def_tnl.txt
