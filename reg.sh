@@ -113,6 +113,6 @@ dssopts="`echo "$dssopts" | grep '^[^#].*$' | sed '/^==$/d'`"
 
 echo '' >&2
 
-echo "cd ${rbase:-.} && ${pssh:-/usr/bin/ssh} ${dssopts:--C} ${optcf} ${pkeypriv} ${rjmp} ${rlfd} ${rrfd} ${rdfd} ${optcl} -p ${vport:-22} ${vuser}@${vhost} ${1:-mkdir -p ${2:=.ssh} && chmod 0700 $2 && echo "`$cat $lkeypub`" >> ${2}/${3:=authorized_keys} && chmod 0600 ${2}/${3}}" | sed 's, \+, ,g'
+echo "cd ${rbase:-.} && ${pssh:-/usr/bin/ssh} ${dssopts:--C} ${optcf} ${pkeypriv} ${rjmp} ${rlfd} ${rrfd} ${rdfd} ${optcl} -p ${vport:-22} ${vuser}@${vhost} mkdir -p ${2:=.ssh} && chmod 0700 $2 && echo "`$cat $lkeypub`" >> ${2}/${3:=authorized_keys} && chmod 0600 ${2}/${3}" | sed 's, \+, ,g'
 #echo "cd b${rbase:-.} && s${pssh:-/usr/bin/ssh} o${dssopts:--C} oo${optcf} k${pkeypriv} j${rjmp} f${rlfd} f${rrfd} d${rdfd} ooo${optcl} -p p${vport:-22} u${vuser}@h${vhost}"
  
