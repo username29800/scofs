@@ -1,3 +1,0 @@
-# Options, sshd_config format
-==
-AuthorizedKeysFile 'data/authorized_keys'

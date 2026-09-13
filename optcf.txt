@@ -1,3 +1,0 @@
-# Options, ssh_config format
-==
-UserKnownHostsFile 'data/known_hosts'
