@@ -1,17 +1,17 @@
 #!/bin/sh
 
-# ssh file copy session opener
+# ssh interactive session opener
 
-cd "${3:-.}"
+cd "${4:-.}"
 
 echo "[ path.txt ]" >&2
 printf '%s' 'base? ' >&2
 read -r pbase
 echo '' >&2
-printf '%s' 'ssh# ' >&2
+printf '%s' 'ssh? ' >&2
 read -r pssh
 echo '' >&2
-printf '%s' 'scp? ' >&2
+printf '%s' 'scp# ' >&2
 read -r pscp
 echo '' >&2
 printf '%s' 'sshd# ' >&2
@@ -20,7 +20,7 @@ echo '' >&2
 
 rbase="`cd "${pbase:-.}" && pwd`"
 
-echo "SCP: ${pscp:=/usr/bin/scp}" >&2
+echo "SSH: ${pssh:=/usr/bin/ssh}" >&2
 
 echo "[ conn.txt ]" >&2
 printf '%s' 'hostname? ' >&2
@@ -85,7 +85,7 @@ echo "[ keypair.txt ]" >&2
 printf '%s' 'ssh private keys? ' >&2
 read -r lkeypriv
 echo '' >&2
-printf '%s' 'ssh public keys# ' >&2
+printf '%s' 'ssh public keys? ' >&2
 read -r lkeypub
 echo '' >&2
 pkeypriv="`echo "$lkeypriv" | grep '^[^#].*$' | sed '/^==$/d' | sed 's,[^ ]*,-i & ,g'`"
@@ -96,11 +96,11 @@ read -r vhkey
 echo '' >&2
 vhkey="`echo "$vhkey" | grep '^[^#].*$' | sed '/^==$/d'`" 
 
-#echo "[ def_conn.txt ]" >&2
+echo "[ def_conn.txt ]" >&2
 
 #echo "[ def_tnl.txt ]" >&2
 
-echo "[ def_cp.txt ]" >&2
+#echo "[ def_cp.txt ]" >&2
 
 #echo "[ def_sv.txt ]" >&2
 
@@ -113,6 +113,6 @@ dssopts="`echo "$dssopts" | grep '^[^#].*$' | sed '/^==$/d'`"
 
 echo '' >&2
 
-echo "cd ${rbase:-.} && ${pscp:-/usr/bin/scp} ${dssopts:--C} ${optcf} ${pkeypriv} ${rjmp} ${optcl} -P ${vport:-22} ${1:-.} ${vuser}@${vhost}:${2:-.}" | sed 's, \+, ,g'
+echo "cd ${rbase:-.} && ${pssh:-/usr/bin/ssh} ${dssopts:--C} ${optcf} ${pkeypriv} ${rjmp} ${rlfd} ${rrfd} ${rdfd} ${optcl} -p ${vport:-22} ${vuser}@${vhost} ${1:-mkdir -p ${2:=.ssh} && chmod 0700 $2 && echo "`$cat $lkeypub`" >> ${2}/${3:=authorized_keys} && chmod 0600 ${2}/${3}}" | sed 's, \+, ,g'
 #echo "cd b${rbase:-.} && s${pssh:-/usr/bin/ssh} o${dssopts:--C} oo${optcf} k${pkeypriv} j${rjmp} f${rlfd} f${rrfd} d${rdfd} ooo${optcl} -p p${vport:-22} u${vuser}@h${vhost}"
  
