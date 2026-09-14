@@ -113,6 +113,6 @@ dssopts="`echo "$dssopts" | grep '^[^#].*$' | sed '/^==$/d'`"
 
 echo '' >&2
 
-echo "cd ${rbase:-.} && ${pscp:-/usr/bin/scp} ${dssopts:--C} ${optcf} ${pkeypriv} ${rjmp} ${optcl} -${portf:=P} ${vport:-22} ${1:-.} ${vuser}@${vhost}:${2:-.}" | sed 's, \+, ,g'
+echo "cd ${rbase:-.} && ${pscp:-/usr/bin/scp} ${dssopts} ${optcf} ${pkeypriv} ${rjmp} ${optcl} -${portf:=P} ${vport:-22} ${1:-.} ${vuser}@${vhost}:${2:-.}" | sed 's, \+, ,g'
 #echo "cd b${rbase:-.} && s${pssh:-/usr/bin/ssh} o${dssopts:--C} oo${optcf} k${pkeypriv} j${rjmp} f${rlfd} f${rrfd} d${rdfd} ooo${optcl} -p p${vport:-22} u${vuser}@h${vhost}"
  
