@@ -52,13 +52,13 @@ printf '%s' 'jump hosts# ' >&2
 read -r ljmp
 echo '' >&2
 
-rlfd="`echo "$llfd" | grep '^[^#].*$' | sed '/^==$/d' | sed "s,\([0-9]\+\):ml/sr:\([0-9]\+\),-L \1:$vhost:\2,g"`"
-rrfd="`echo "$lrfd" | grep '^[^#].*$' | sed '/^==$/d' | sed "s,\([0-9]\+\):mr/sl:\([0-9]\+\),-R \1:$vselfname:\2,g"`"
-rdfd="`echo "$ldfd" | grep '^[^#].*$' | sed '/^==$/d' | sed "s,\(^\| \+\)\([0-9]\+\),-D \2 ,g"`"
-rjmp="`echo "$ljmp" | grep '^[^#].*$' | sed '/^==$/d' | sed "s,[^ ]*,-J & ,g"`"
-echo "$rlfd" | sed 's, -L,\n-L,g' | sed '/^ *$/d' >&2
-echo "$rrfd" | sed 's, -R,\n-R,g' | sed '/^ *$/d' >&2
-echo "$rdfd" | sed 's, -D,\n-D,g' | sed '/^ *$/d' >&2
+rlfd="`echo "$llfd" | grep '^[^#].*$' | sed '/^==$/d' | sed "s,\([0-9]\+\):ml/sr:\([0-9]\+\),-${locfdf:=L} \1:$vhost:\2,g"`"
+rrfd="`echo "$lrfd" | grep '^[^#].*$' | sed '/^==$/d' | sed "s,\([0-9]\+\):mr/sl:\([0-9]\+\),-${remfdf:=R} \1:$vselfname:\2,g"`"
+rdfd="`echo "$ldfd" | grep '^[^#].*$' | sed '/^==$/d' | sed "s,\(^\| \+\)\([0-9]\+\),-${dynfdf:=D} \2 ,g"`"
+rjmp="`echo "$ljmp" | grep '^[^#].*$' | sed '/^==$/d' | sed "s,[^ ]*,-${jmpf:=J} & ,g"`"
+echo "$rlfd" | sed "s, -${locfdf},\n-${locfdf},g" | sed '/^ *$/d' >&2
+echo "$rrfd" | sed "s, -${remfdf},\n-${remfdf},g" | sed '/^ *$/d' >&2
+echo "$rdfd" | sed "s, -${dynfdf},\n-${dynfdf},g" | sed '/^ *$/d' >&2
 
 echo "[ optcf.txt ]" >&2
 printf '%s' 'options (client, config format)# ' >&2
@@ -88,13 +88,13 @@ echo '' >&2
 printf '%s' 'ssh public keys# ' >&2
 read -r lkeypub
 echo '' >&2
-pkeypriv="`echo "$lkeypriv" | grep '^[^#].*$' | sed '/^==$/d' | sed 's,[^ ]*,-i & ,g'`"
+pkeypriv="`echo "$lkeypriv" | grep '^[^#].*$' | sed '/^==$/d' | sed "s,[^ ]*,-${idf:=i} & ,g"`"
 
 echo "[ hostkey.txt ]" >&2
 printf '%s' 'hostkey? ' >&2
 read -r vhkey
 echo '' >&2
-vhkey="`echo "$vhkey" | grep '^[^#].*$' | sed '/^==$/d' | sed 's,^ *\([^ ]\+\) *$,-h \1,'`" 
+vhkey="`echo "$vhkey" | grep '^[^#].*$' | sed '/^==$/d' | sed "s,^ *\([^ ]\+\) *$,-${hostkf:=h} \1,"`" 
 
 #echo "[ def_conn.txt ]" >&2
 
@@ -113,6 +113,6 @@ dssopts="`echo "$dssopts" | grep '^[^#].*$' | sed '/^==$/d'`"
 
 echo '' >&2
 
-echo "cd ${rbase:-.} && ${psshd:-/usr/sbin/sshd} ${dssopts:--D} ${optsf} ${vhkey} ${optsl} -p ${vport:-22}" | sed 's, \+, ,g'
+echo "cd ${rbase:-.} && ${psshd:-/usr/sbin/sshd} ${dssopts:--D} ${optsf} ${vhkey} ${optsl} -${portf:=p} ${vport:-22}" | sed 's, \+, ,g'
 #echo "cd b${rbase:-.} && s${pssh:-/usr/bin/ssh} o${dssopts:--C} oo${optcf} k${pkeypriv} j${rjmp} f${rlfd} f${rrfd} d${rdfd} ooo${optcl} -p p${vport:-22} u${vuser}@h${vhost}"
  
