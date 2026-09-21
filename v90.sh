@@ -73,8 +73,8 @@ echo "highlight String gui=bold cterm=bold term=bold" >> $dest/vim-90-ldays-bk/v
 echo "highlight String guibg=DarkBlue guifg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight String ctermbg=DarkBlue ctermfg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Constant gui=bold cterm=bold term=bold" >> $dest/vim-90-ldays-bk/v90ld.vim
-echo "highlight Constant guibg=DarkRed guifg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
-echo "highlight Constant ctermbg=DarkRed ctermfg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
+echo "highlight Constant guibg=DarkBlue guifg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
+echo "highlight Constant ctermbg=DarkBlue ctermfg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Statement gui=bold cterm=bold term=bold" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Statement guibg=DarkRed guifg=Cyan" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Statement ctermbg=DarkRed ctermfg=Cyan" >> $dest/vim-90-ldays-bk/v90ld.vim

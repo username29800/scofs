@@ -69,8 +69,8 @@ highlight String gui=bold cterm=bold term=bold
 highlight String guibg=DarkBlue guifg=Yellow
 highlight String ctermbg=DarkBlue ctermfg=Yellow
 highlight Constant gui=bold cterm=bold term=bold
-highlight Constant guibg=DarkRed guifg=Yellow
-highlight Constant ctermbg=DarkRed ctermfg=Yellow
+highlight Constant guibg=DarkBlue guifg=Yellow
+highlight Constant ctermbg=DarkBlue ctermfg=Yellow
 highlight Statement gui=bold cterm=bold term=bold
 highlight Statement guibg=DarkRed guifg=Cyan
 highlight Statement ctermbg=DarkRed ctermfg=Cyan
