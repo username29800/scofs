@@ -2,7 +2,7 @@
 
 # ssh interactive session opener
 
-cd "${4:-.}"
+cd "${1:-.}"
 
 echo "[ path.txt ]" >&2
 printf '%s' 'base? ' >&2
