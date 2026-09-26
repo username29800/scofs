@@ -86,9 +86,9 @@ echo "highlight NonText ctermbg=DarkBlue ctermfg=White" >> $dest/vim-90-ldays-bk
 echo "highlight SpecialKey gui=NONE cterm=NONE term=underline,reverse" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight SpecialKey guibg=DarkRed guifg=White" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight SpecialKey ctermbg=DarkRed ctermfg=White" >> $dest/vim-90-ldays-bk/v90ld.vim
-echo "highlight Number gui=underline cterm=underline term=underline" >> $dest/vim-90-ldays-bk/v90ld.vim
-echo "highlight Number guibg=DarkMagenta guifg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
-echo "highlight Number ctermbg=DarkMagenta ctermfg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
+echo "highlight Number gui=bold,underline cterm=bold,underline term=bold,underline" >> $dest/vim-90-ldays-bk/v90ld.vim
+echo "highlight Number guibg=DarkBlue guifg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
+echo "highlight Number ctermbg=DarkBlue ctermfg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Function gui=NONE cterm=NONE term=reverse" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Function guibg=DarkCyan guifg=Black" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Function ctermbg=DarkCyan ctermfg=Black" >> $dest/vim-90-ldays-bk/v90ld.vim

@@ -92,8 +92,8 @@ highlight Identifier gui=NONE cterm=NONE term=reverse
 highlight Identifier guibg=DarkCyan guifg=Black
 highlight Identifier ctermbg=DarkCyan ctermfg=Black
 highlight Type gui=bold cterm=bold term=bold,reverse
-highlight Type guibg=DarkBlue guifg=Cyan
-highlight Type ctermbg=DarkBlue ctermfg=Cyan
+highlight Type guibg=DarkGreen guifg=White
+highlight Type ctermbg=DarkGreen ctermfg=White
 highlight MatchParen guibg=White guifg=DarkRed
 highlight MatchParen ctermbg=White ctermfg=DarkRed
 highlight ModeMsg gui=NONE cterm=NONE term=reverse
