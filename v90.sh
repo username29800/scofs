@@ -96,8 +96,8 @@ echo "highlight Identifier gui=NONE cterm=NONE term=reverse" >> $dest/vim-90-lda
 echo "highlight Identifier guibg=DarkCyan guifg=Black" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Identifier ctermbg=DarkCyan ctermfg=Black" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Type gui=bold cterm=bold term=bold,reverse" >> $dest/vim-90-ldays-bk/v90ld.vim
-echo "highlight Type guibg=DarkBlue guifg=Cyan" >> $dest/vim-90-ldays-bk/v90ld.vim
-echo "highlight Type ctermbg=DarkBlue ctermfg=Cyan" >> $dest/vim-90-ldays-bk/v90ld.vim
+echo "highlight Type guibg=DarkGreen guifg=White" >> $dest/vim-90-ldays-bk/v90ld.vim
+echo "highlight Type ctermbg=DarkGreen ctermfg=White" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight MatchParen guibg=White guifg=DarkRed" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight MatchParen ctermbg=White ctermfg=DarkRed" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight ModeMsg gui=NONE cterm=NONE term=reverse" >> $dest/vim-90-ldays-bk/v90ld.vim
