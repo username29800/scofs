@@ -2,8 +2,6 @@
 
 # instance script generator
 
-cd "${2:-.}"
-
 echo "options: "
 echo "opt:  ioptf"
 echo "fwd:  ilff / irff / idff"
