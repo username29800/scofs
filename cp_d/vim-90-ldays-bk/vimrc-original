@@ -66,11 +66,11 @@ highlight Comment ctermbg=Grey ctermfg=Black
 highlight Normal guibg=Black guifg=Grey
 highlight Normal ctermbg=Black ctermfg=Grey
 highlight String gui=bold cterm=bold term=bold
-highlight String guibg=DarkBlue guifg=Yellow
-highlight String ctermbg=DarkBlue ctermfg=Yellow
+highlight String guibg=DarkBlue guifg=LightYellow
+highlight String ctermbg=DarkBlue ctermfg=LightYellow
 highlight Constant gui=bold cterm=bold term=bold
-highlight Constant guibg=DarkBlue guifg=Yellow
-highlight Constant ctermbg=DarkBlue ctermfg=Yellow
+highlight Constant guibg=DarkBlue guifg=LightYellow
+highlight Constant ctermbg=DarkBlue ctermfg=LightYellow
 highlight Statement gui=bold cterm=bold term=bold
 highlight Statement guibg=DarkRed guifg=Cyan
 highlight Statement ctermbg=DarkRed ctermfg=Cyan
@@ -83,8 +83,8 @@ highlight SpecialKey gui=NONE cterm=NONE term=underline,reverse
 highlight SpecialKey guibg=DarkRed guifg=White
 highlight SpecialKey ctermbg=DarkRed ctermfg=White
 highlight Number gui=bold,underline cterm=bold,underline term=bold,underline
-highlight Number guibg=DarkBlue guifg=Yellow
-highlight Number ctermbg=DarkBlue ctermfg=Yellow
+highlight Number guibg=DarkBlue guifg=LightYellow
+highlight Number ctermbg=DarkBlue ctermfg=LightYellow
 highlight Function gui=NONE cterm=NONE term=reverse
 highlight Function guibg=DarkCyan guifg=Black
 highlight Function ctermbg=DarkCyan ctermfg=Black
