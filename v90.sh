@@ -70,11 +70,11 @@ echo "highlight Comment ctermbg=Grey ctermfg=Black" >> $dest/vim-90-ldays-bk/v90
 echo "highlight Normal guibg=Black guifg=Grey" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Normal ctermbg=Black ctermfg=Grey" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight String gui=bold cterm=bold term=bold" >> $dest/vim-90-ldays-bk/v90ld.vim
-echo "highlight String guibg=DarkBlue guifg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
-echo "highlight String ctermbg=DarkBlue ctermfg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
+echo "highlight String guibg=DarkBlue guifg=LightYellow" >> $dest/vim-90-ldays-bk/v90ld.vim
+echo "highlight String ctermbg=DarkBlue ctermfg=LightYellow" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Constant gui=bold cterm=bold term=bold" >> $dest/vim-90-ldays-bk/v90ld.vim
-echo "highlight Constant guibg=DarkBlue guifg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
-echo "highlight Constant ctermbg=DarkBlue ctermfg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
+echo "highlight Constant guibg=DarkBlue guifg=LightYellow" >> $dest/vim-90-ldays-bk/v90ld.vim
+echo "highlight Constant ctermbg=DarkBlue ctermfg=LightYellow" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Statement gui=bold cterm=bold term=bold" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Statement guibg=DarkRed guifg=Cyan" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Statement ctermbg=DarkRed ctermfg=Cyan" >> $dest/vim-90-ldays-bk/v90ld.vim
@@ -87,8 +87,8 @@ echo "highlight SpecialKey gui=NONE cterm=NONE term=underline,reverse" >> $dest/
 echo "highlight SpecialKey guibg=DarkRed guifg=White" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight SpecialKey ctermbg=DarkRed ctermfg=White" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Number gui=bold,underline cterm=bold,underline term=bold,underline" >> $dest/vim-90-ldays-bk/v90ld.vim
-echo "highlight Number guibg=DarkBlue guifg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
-echo "highlight Number ctermbg=DarkBlue ctermfg=Yellow" >> $dest/vim-90-ldays-bk/v90ld.vim
+echo "highlight Number guibg=DarkBlue guifg=LightYellow" >> $dest/vim-90-ldays-bk/v90ld.vim
+echo "highlight Number ctermbg=DarkBlue ctermfg=LightYellow" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Function gui=NONE cterm=NONE term=reverse" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Function guibg=DarkCyan guifg=Black" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Function ctermbg=DarkCyan ctermfg=Black" >> $dest/vim-90-ldays-bk/v90ld.vim
