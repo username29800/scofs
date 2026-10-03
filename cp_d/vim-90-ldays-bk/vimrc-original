@@ -82,9 +82,9 @@ highlight NonText ctermbg=DarkBlue ctermfg=White
 highlight SpecialKey gui=NONE cterm=NONE term=underline,reverse
 highlight SpecialKey guibg=DarkRed guifg=White
 highlight SpecialKey ctermbg=DarkRed ctermfg=White
-highlight Number gui=underline cterm=underline term=underline
-highlight Number guibg=DarkMagenta guifg=Yellow
-highlight Number ctermbg=DarkMagenta ctermfg=Yellow
+highlight Number gui=bold,underline cterm=bold,underline term=bold,underline
+highlight Number guibg=DarkBlue guifg=Yellow
+highlight Number ctermbg=DarkBlue ctermfg=Yellow
 highlight Function gui=NONE cterm=NONE term=reverse
 highlight Function guibg=DarkCyan guifg=Black
 highlight Function ctermbg=DarkCyan ctermfg=Black
