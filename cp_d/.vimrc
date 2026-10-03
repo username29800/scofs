@@ -98,8 +98,8 @@ highlight Normal ctermbg=Black ctermfg=Grey
 highlight String guibg=Black guifg=LightGreen
 highlight String ctermbg=Black ctermfg=LightGreen
 highlight Constant gui=bold cterm=bold term=bold
-highlight Constant guibg=Green guifg=Black
-highlight Constant ctermbg=Green ctermfg=Black
+highlight Constant guibg=Green guifg=White
+highlight Constant ctermbg=Green ctermfg=White
 highlight Statement guibg=Black guifg=DarkCyan
 highlight Statement ctermbg=Black ctermfg=DarkCyan
 highlight Special guibg=Black guifg=White

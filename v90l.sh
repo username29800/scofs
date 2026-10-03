@@ -102,8 +102,8 @@ echo "highlight Normal ctermbg=Black ctermfg=Grey" >> $dest/vim-90-ldays-bk/v90l
 echo "highlight String guibg=Black guifg=LightGreen" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight String ctermbg=Black ctermfg=LightGreen" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Constant gui=bold cterm=bold term=bold" >> $dest/vim-90-ldays-bk/v90ld.vim
-echo "highlight Constant guibg=Green guifg=Black" >> $dest/vim-90-ldays-bk/v90ld.vim
-echo "highlight Constant ctermbg=Green ctermfg=Black" >> $dest/vim-90-ldays-bk/v90ld.vim
+echo "highlight Constant guibg=Green guifg=White" >> $dest/vim-90-ldays-bk/v90ld.vim
+echo "highlight Constant ctermbg=Green ctermfg=White" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Statement guibg=Black guifg=DarkCyan" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Statement ctermbg=Black ctermfg=DarkCyan" >> $dest/vim-90-ldays-bk/v90ld.vim
 echo "highlight Special guibg=Black guifg=White" >> $dest/vim-90-ldays-bk/v90ld.vim
